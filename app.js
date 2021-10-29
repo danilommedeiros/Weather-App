@@ -12,13 +12,22 @@ let weather = {
   },
   displayWeather: function (data) {
     const { name } = data;
+    const { country } = data.sys;
     const { icon, description } = data.weather[0];
+    const { feels_like } = data.main;
     const { temp, humidity } = data.main;
     const { speed } = data.wind;
-    document.querySelector(".city").innerText = "Clima em " + name;
+    const { temp_max, temp_min } = data.main;
+    document.querySelector(".city").innerText = "Clima em " + ( name + "," + " " + country );
     document.querySelector(".icon").src =
       "https://openweathermap.org/img/wn/" + icon + "@2x.png";
     document.querySelector(".description").innerText = description;
+    document.querySelector(".feels-like").innerText =
+      "Sensação Térmica: " + feels_like + "°C";
+    document.querySelector(".temp-max").innerText =
+      "Max-temp: " + temp_max;
+    document.querySelector(".temp-min").innerText =
+      "Min-temp: " + temp_min;
     document.querySelector(".temp").innerText = temp + "°C";
     document.querySelector(".humidity").innerText =
       "Humidade: " + humidity + "%";
