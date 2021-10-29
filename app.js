@@ -25,9 +25,9 @@ let weather = {
     document.querySelector(".feels-like").innerText =
       "Sensação Térmica: " + feels_like + "°C";
     document.querySelector(".temp-max").innerText =
-      "Max-temp: " + temp_max;
+      "Max-temp: " + temp_max + "°C";
     document.querySelector(".temp-min").innerText =
-      "Min-temp: " + temp_min;
+      "Min-temp: " + temp_min + "°C";
     document.querySelector(".temp").innerText = temp + "°C";
     document.querySelector(".humidity").innerText =
       "Humidade: " + humidity + "%";
