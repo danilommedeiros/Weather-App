@@ -9,7 +9,7 @@ body {
   background-image: url("https://source.unsplash.com/1600x900/?clouds");
   font-size: 120%;
   background-size: cover;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 @media (max-width: 992px) {
