@@ -54,10 +54,4 @@ document
   });
 
 
-  window.OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "9a56a277-61c0-4d56-b77f-b511ce9c6ba9",
-    });
-  });
 
