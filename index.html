@@ -16,14 +16,16 @@
     />
   </head>
   <body>
-  
-    <script src="https://cdn.by.wonderpush.com/sdk/1.1/wonderpush-loader.min.js" async></script>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
-window.WonderPush = window.WonderPush || [];
-WonderPush.push(["init", {
-    webKey: "dc6c72356c65bb15c18e8a4265b3362dd2fe14640e2cb63c8aec082d3254ac42",
-}]);
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "d982b81c-78b3-4228-a278-cc35ff8ba665",
+    });
+  });
 </script>
+    
     
     <div class="card">
       <div class="search">
