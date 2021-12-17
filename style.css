@@ -293,7 +293,7 @@ p{
 @media screen and (max-width: 992px) {
   p{
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: -3px;
   }
 }
 
