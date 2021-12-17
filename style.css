@@ -1,4 +1,4 @@
-html{
+html {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -16,6 +16,7 @@ body {
   font-size: 120%;
   background-size: cover;
   overflow-x: hidden;
+  transition: 1s;
 }
 
 @media (max-width: 992px) {
@@ -99,6 +100,9 @@ input.search-bar {
   background-color: rgba(255, 250, 250, 0.226);
 }
 
+/*=========================
+ Icons
+ ================= */
 * {
   margin: 0;
   padding: 0;
@@ -106,18 +110,17 @@ input.search-bar {
 
 /* footer social icons */
 .footer {
-  background-color: #FAFCFF;
+  background-color: #fafcff;
   padding: 5px 0;
   text-align: center;
- background: #292929f2;
- width: 100%;
- height: 70px;
- position: absolute;
- bottom: 0;
- left: 0;
- transition: 2s;
- animation: slidein 2s ease-in-out; 
-
+  background: #292929f2;
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 2s;
+  animation: slidein 2s ease-in-out;
 }
 
 ul.social-network {
@@ -141,10 +144,12 @@ ul.social-network li {
 
 .social-network a.icoTwitter:hover {
   background-color: #33ccff;
+  transition: 2s;
 }
 
 .social-network a.icoMedium:hover {
-  background-color: #00AB6C;
+  background-color: #00ab6c;
+  transition: 2s;
 }
 
 .social-network a.icoGit:hover {
@@ -154,14 +159,11 @@ ul.social-network li {
 
 .social-network a.icoLinkedin:hover {
   background-color: #007bb7;
+  transition: 2s;
 }
 
 .social-network a.icoInstagram:hover {
-  background: #f09433;
-  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+  background: #e41770;
   transition: 2s;
 }
 
@@ -216,7 +218,7 @@ ul.social-network li {
   -moz-transition: all 0.8s;
   -o-transition: all 0.8s;
   -ms-transition: all 0.8s;
-  transition: all 2s;
+  transition: 2s;
 }
 
 .social-circle a {
@@ -287,34 +289,20 @@ ul.social-network li {
   }
 }
 
-p{
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
   color: #fff;
   text-align: center;
   margin-top: 0px;
-
+  transition: 2s;
 }
 
 @media screen and (max-width: 992px) {
-  p{
+  p {
     font-size: 18px;
     margin-top: -3px;
   }
 }
 
-@keyframes slideIn {
-  0% {
-    opacity: 0%;
-    
-  }
-  100% {
-    opacity: 50%;
-  }
-  100% {
-    opacity: 100%;
-    
-  }
-}
-
-
+@k;
