@@ -230,6 +230,7 @@ ul.social-network li {
   ul.social-network li {
     display: inline;
     margin: 0 5px;
+    transition: 2s;
   }
 }
 
@@ -237,6 +238,7 @@ ul.social-network li {
   ul.social-network li {
     display: inline;
     margin: 0 5px;
+    transition: 2s;
   }
 
   .social-circle li a {
@@ -265,6 +267,7 @@ ul.social-network li {
   ul.social-network li {
     display: inline;
     margin: 0 2px;
+    transition: 2s;
   }
 
   .social-circle li a {
@@ -277,7 +280,7 @@ ul.social-network li {
     text-align: center;
     width: 40px;
     height: 40px;
-    font-size: 25px;
+    font-size: 16px;
     transition: 2s;
   }
 
@@ -302,7 +305,8 @@ p {
   p {
     font-size: 18px;
     margin-top: -3px;
+    transition: 2s;
   }
 }
 
-@k;
+
