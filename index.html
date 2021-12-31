@@ -12,7 +12,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
-    <title>Weather Life</title>
+    <title class="notranslate">Weather Life</title>
     <link rel="shortcut icon" href="/icon.png" />
     <link rel="stylesheet" href="/style.css" />
     <script src="app.js" defer></script>
@@ -26,7 +26,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-  </head>
   <body>
     <div class="card">
       <div class="search">
@@ -52,18 +51,20 @@
         </button>
       </div>
       <div class="weather">
-        <h2 class="city"></h2>
-        <h1 class="temp"></h1>
+        <h2 class="notranslate" id="city"></h2>
+        <h1 class="notranslate" id="temp"></h1>
         <div class="flex">
           <img src="" alt="" class="icon" />
-          <div class="description"></div>
+          <div class="description">
+
+          </div>
         </div>
         <div class="about-clime">
-          <div class="feels-like"></div>
-          <div class="temp-max"></div>
-          <div class="temp-min"></div>
-          <div class="humidity"></div>
-          <div class="wind"></div>
+          <div class="notranslate" id="feels-like"></div>
+          <div class="notranslate"  id="temp-max"></div>
+          <div class="notranslate" id="temp-min"></div>
+          <div class="notranslate" id="humidity"></div>
+          <div class="notranslate"  id="wind"></div>
         </div>
       </div>
     </div>
@@ -102,5 +103,11 @@
        
       </ul>
     </div>
+
+  
+
+
+
+  
   </body>
 </html>
