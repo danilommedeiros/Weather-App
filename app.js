@@ -18,20 +18,20 @@ let weather = {
     const { temp, humidity } = data.main;
     const { speed } = data.wind;
     const { temp_max, temp_min } = data.main;
-    document.querySelector(".city").innerText = "Clima em " + ( name + "," + " " + country );
-    document.querySelector(".icon").src =
+    document.querySelector("#city").innerText = "Clima em " + ( name + "," + " " + country );
+    document.querySelector("#icon").src =
       "https://openweathermap.org/img/wn/" + icon + "@2x.png";
-    document.querySelector(".description").innerText = description;
-    document.querySelector(".feels-like").innerText =
+    document.querySelector("#description").innerText = description;
+    document.querySelector("#feels-like").innerText =
       "Sensação Térmica: " + feels_like + "°C";
-    document.querySelector(".temp-max").innerText =
+    document.querySelector("#temp-max").innerText =
       "Max-temp: " + temp_max + "°C";
-    document.querySelector(".temp-min").innerText =
+    document.querySelector("#temp-min").innerText =
       "Min-temp: " + temp_min + "°C";
-    document.querySelector(".temp").innerText = temp + "°C";
+    document.querySelector("#temp").innerText = temp + "°C";
     document.querySelector(".humidity").innerText =
       "Humidade: " + humidity + "%";
-    document.querySelector(".wind").innerText =
+    document.querySelector("#wind").innerText =
       "Velocidade do vento: " + speed + " km/h";
     document.body.style.backgroundImage =
       "url('https://source.unsplash.com/1600x900/?" + name + "')";
