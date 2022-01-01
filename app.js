@@ -29,7 +29,7 @@ let weather = {
     document.querySelector("#temp-min").innerText =
       "Min-temp: " + temp_min + "°C";
     document.querySelector("#temp").innerText = temp + "°C";
-    document.querySelector(".humidity").innerText =
+    document.querySelector("#humidity").innerText =
       "Humidade: " + humidity + "%";
     document.querySelector("#wind").innerText =
       "Velocidade do vento: " + speed + " km/h";
