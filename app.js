@@ -19,7 +19,7 @@ let weather = {
     const { speed } = data.wind;
     const { temp_max, temp_min } = data.main;
     document.querySelector("#city").innerText = "Clima em " + ( name + "," + " " + country );
-    document.querySelector("#icon").src =
+    document.querySelector(".icon").src =
       "https://openweathermap.org/img/wn/" + icon + "@2x.png";
     document.querySelector(".description").innerText = description;
     document.querySelector("#feels-like").innerText =
