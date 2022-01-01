@@ -21,7 +21,7 @@ let weather = {
     document.querySelector("#city").innerText = "Clima em " + ( name + "," + " " + country );
     document.querySelector("#icon").src =
       "https://openweathermap.org/img/wn/" + icon + "@2x.png";
-    document.querySelector("#description").innerText = description;
+    document.querySelector(".description").innerText = description;
     document.querySelector("#feels-like").innerText =
       "Sensação Térmica: " + feels_like + "°C";
     document.querySelector("#temp-max").innerText =
