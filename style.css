@@ -19,11 +19,7 @@ body {
   transition: 1s;
 }
 
-@media (max-width: 992px) {
-  body {
-    background-position: center;
-  }
-}
+
 
 .card {
   background: #000000d0;
