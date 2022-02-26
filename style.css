@@ -22,6 +22,7 @@ body {
 @media (max-width: 992px) {
   body {
     background-position: center;
+    background-image: url("https://source.unsplash.com/1600x900/?clouds");
   }
 }
 
