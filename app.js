@@ -1,6 +1,6 @@
 let weather = {
   apiKey: "d3fd379167ffb1424ae70a84ad9e4c9d",
-  unsplashAccessKey: "FgLEIx7lHqwUe-jctVzOaBB1WO4DzF2iqHiR7okaYHU", // Adicione sua chave da API Unsplash
+  unsplashAccessKey: "SUA_UNSPLASH_ACCESS_KEY", // Adicione sua chave da API Unsplash
 
   fetchWeather: function (city) {
     fetch(
@@ -36,14 +36,16 @@ let weather = {
     document.querySelector("#wind").innerText =
       "Velocidade do vento: " + speed + " km/h";
 
-    // Busca imagem da cidade usando a API da Unsplash
+    // Busca imagem da cidade usando a API da Unsplash com dimensões específicas
     fetch(
-      `https://api.unsplash.com/photos/random?query=${name},city&client_id=${this.unsplashAccessKey}`
+      `https://api.unsplash.com/photos/random?query=${name},city&orientation=landscape&w=1600&h=900&client_id=${this.unsplashAccessKey}`
     )
       .then((response) => response.json())
       .then((imageData) => {
-        const imageUrl = imageData.urls.regular;
+        const imageUrl = imageData.urls.full;
         document.body.style.backgroundImage = `url('${imageUrl}')`;
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundPosition = 'center';
       })
       .catch(() => {
         document.body.style.backgroundImage = "url('default-background.jpg')";
