@@ -18,7 +18,7 @@ let weather = {
     const { temp, humidity } = data.main;
     const { speed } = data.wind;
     const { temp_max, temp_min } = data.main;
-    document.querySelector("#city").innerText = "Clima em " + ( name + "," + " " + country );
+    document.querySelector("#city").innerText = "Clima em " + ( name + ", " + country );
     document.querySelector(".icon").src =
       "https://openweathermap.org/img/wn/" + icon + "@2x.png";
     document.querySelector(".description").innerText = description;
@@ -33,8 +33,12 @@ let weather = {
       "Humidade: " + humidity + "%";
     document.querySelector("#wind").innerText =
       "Velocidade do vento: " + speed + " km/h";
+
+    // Ajuste para remover espaços extras no nome da cidade
+    const cityName = name.replace(/\s+/g, "");
+
     document.body.style.backgroundImage =
-      "url('https://source.unsplash.com/1600x900/?" + name + "')";
+      "url('https://source.unsplash.com/1600x900/?" + cityName + ",city')";
   },
   search: function () {
     this.fetchWeather(document.querySelector(".search-bar").value);
@@ -52,6 +56,3 @@ document
       weather.search();
     }
   });
-
-
-
